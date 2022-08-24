@@ -30,7 +30,7 @@
 
                 <div  class="mb-2 font-semibold text-gray-500 text-lg">First name</div>
                 
-                <input type="text" class="border-2 border-gray-300 w-full p-1 outline-none rounded ">
+                <input type="text" class="border-2 border-gray-300 w-full p-1 outline-none rounded focus:border-blue-300">
 
             </div>
 
@@ -38,7 +38,7 @@
 
                 <div class="mb-2 mx-2 font-semibold text-gray-500 text-lg">Last Name</div>
 
-                <input type="text" class="border-2 border-gray-300 w-full p-1 lg:mx-2 outline-none rounded ">
+                <input type="text" class="border-2 border-gray-300 w-full p-1 lg:mx-2 outline-none rounded focus:border-blue-300 ">
 
             </div>
 
@@ -46,7 +46,7 @@
 
                 <div  class="mb-2 font-semibold text-gray-500 text-lg">Phone number</div>
 
-                <input type="number" class="border-2 border-gray-300 w-full p-1 outline-none rounded ">
+                <input type="number" class="border-2 border-gray-300 w-full p-1 outline-none rounded focus:border-blue-300 ">
 
             </div>
 
@@ -54,7 +54,7 @@
 
                 <div  class="mb-2 mx-2 font-semibold text-gray-500 text-lg">Email</div>
 
-                <input type="email" class="border-2 border-gray-300 w-full p-1 lg:mx-2 outline-none rounded ">
+                <input type="email" class="border-2 border-gray-300 w-full p-1 lg:mx-2 outline-none rounded focus:border-blue-300">
 
             </div>
 
@@ -62,7 +62,7 @@
 
                 <div  class="mb-2 font-semibold text-gray-500 text-lg">Password</div>
 
-                <input type="password" class="border-2 border-gray-300 w-full p-1 outline-none rounded">
+                <input type="password" class="border-2 border-gray-300 w-full p-1 outline-none rounded focus:border-blue-300">
 
             </div>
 
@@ -70,7 +70,7 @@
 
                 <div  class="mb-2 mx-2 font-semibold text-gray-500 text-lg">Confirm password</div>
 
-                <input type="password" class="border-2 border-gray-300 w-full lg:mx-2 p-1 outline-none rounded ">
+                <input type="password" class="border-2 border-gray-300 w-full lg:mx-2 p-1 outline-none rounded focus:border-blue-300">
 
             </div>
 
