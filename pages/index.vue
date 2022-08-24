@@ -86,9 +86,9 @@
           <h1 class="mx-2 text-gray-500 font-semibold">I agree to the <span class="font-bold text-blue-500">Term, privacy policy</span> and <span class="font-bold text-blue-500">Fees</span></h1>
         </div>
 
-        <div class="mx-10 xl:mx-32 mt-6 mb-6 lg:mt-10">
-          <nuxt-link to="dashboard" class="border text-white bg-gray-500 p-4 px-16 rounded-2xl hover:bg-black">Create Account</nuxt-link>
-          <h1 class="mt-8 mx-4 md:mx-0 font-bold text-gray-500">Already have an account? <span class="text-blue-500 font-bold">Log in</span></h1>
+        <div class="mx-10 xl:mx-32 mb-6 mt-10">
+          <nuxt-link to="dashboard" class="border text-white bg-gray-500 mt-10 p-4 px-16 rounded-2xl hover:bg-black">Create Account</nuxt-link>
+          <h1 class="mt-8 mx-2 md:mx-0 font-bold text-gray-500">Already have an account? <span class="text-blue-500 font-bold">Log in</span></h1>
         </div>
          
       </div>
