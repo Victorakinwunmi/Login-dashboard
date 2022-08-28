@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-center items-center rounded-3xl w-full h-44 shadow-2xl">
+  <div class="flex justify-start gap-6 items-center rounded-3xl w-full h-auto shadow-xl px-6 py-8 lg:py-12 border border-gray-200">
 
-     <div class="mx-8 xl:mx-2">
+     <div class="">
         <slot name="icon"></slot>
      </div>
 

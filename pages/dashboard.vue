@@ -44,7 +44,7 @@
       </template>
     </SidebarContainer>
 
-    <div class="w-full p-8 lg:p-32 xl:p-40">
+    <div class="w-full p-6 lg:px-32 xl:px-40">
       <div class="">
         <HeaderContent>
           <template #text>

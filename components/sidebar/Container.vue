@@ -11,7 +11,7 @@
     </div>
 
     <div
-      :class="is_revealed ? 'block' : 'hidden lg:hidden'"
+      :class="is_revealed ? 'block' : 'hidden'"
       @click="hideMenu"
       class="p-4 float-right"
     >

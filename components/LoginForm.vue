@@ -32,6 +32,7 @@ export default {
        title: String,
        subtitle: String,
        desc: String,
+       password:Number,
     },
 }
 </script>
