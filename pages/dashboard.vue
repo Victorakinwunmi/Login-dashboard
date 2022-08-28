@@ -183,7 +183,7 @@ export default {
           title: "Shopify masterclass",
           desc: "Bookings - 45",
           btn: "View details",
-          rating:"4",
+          rating:4,
           reviewcount:"Based 34 reviews"
         },
 
@@ -193,7 +193,7 @@ export default {
           title: "How to start a YouTube channel",
           desc: "Bookings - 25",
           btn: "View details",
-          rating:"5",
+          rating:5,
           reviewcount:"Based 14 reviews"
         },
 
@@ -203,7 +203,7 @@ export default {
           title: "Introduction to UI/UX design",
           desc: "Bookings - 30",
           btn: "View details",
-          rating:"3",
+          rating:3,
           reviewcount:"Based 50 reviews"
         },
 
@@ -213,7 +213,7 @@ export default {
           title: "How to manage your social media account",
           desc: "Booking - 45",
           btn: "View details",
-          rating:"4",
+          rating:4,
           reviewcount:"Based 30 reviews"
         },
       ],
