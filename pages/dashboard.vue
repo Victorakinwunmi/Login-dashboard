@@ -18,22 +18,22 @@
       </template>
 
       <template #menu>
-        <SidebarMenu path="https://www.paath.com">
+        <SidebarMenu path="./dashboard">
           <div><SharedIcons icon_name="icon1" /></div>
           <div>Home</div>
         </SidebarMenu>
 
-        <SidebarMenu path="https://www.paath.com">
+        <SidebarMenu path="./classes">
           <div><SharedIcons icon_name="icon2" /></div>
           <div>Classes</div>
         </SidebarMenu>
 
-        <SidebarMenu path="https://www.paath.com">
+        <SidebarMenu path="./payments">
           <div><SharedIcons icon_name="icon3" /></div>
           <div>Payments</div>
         </SidebarMenu>
 
-        <SidebarMenu path="https://www.paath.com">
+        <SidebarMenu path="./tools">
           <div><SharedIcons icon_name="icon4" /></div>
           <div>Tools</div>
         </SidebarMenu>
