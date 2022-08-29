@@ -94,7 +94,7 @@
             <template #details>
               <div class="font-semibold text-xl">Total bookings</div>
 
-              <div class="font-bold text-3xl">2,500</div>
+              <div class="font-bold text-3xl">276</div>
             </template>
           </CardContainer>
         </div>
@@ -113,7 +113,7 @@
             <template #details>
               <div class="font-semibold text-xl">Total Classes</div>
 
-              <div class="font-bold text-3xl">25</div>
+              <div class="font-bold text-3xl">8</div>
             </template>
           </CardContainer>
         </div>
@@ -132,7 +132,7 @@
             <template #details>
               <div class="font-semibold text-xl">Total Earnings</div>
 
-              <div class="font-bold text-3xl">$150,000</div>
+              <div class="font-bold text-3xl">$15,000</div>
             </template>
           </CardContainer>
         </div>
