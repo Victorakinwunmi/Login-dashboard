@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 p-4 flex justify-between items-center">
+  <div class="mt-16 lg:mt-0 bg-gray-200 p-4 flex justify-between items-center">
     <div class="">
       <h1 class="font-bold text-5xl mb-6">Welcome</h1>
       <p>These are your classes below</p>
