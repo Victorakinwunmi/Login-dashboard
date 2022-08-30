@@ -40,6 +40,7 @@
           lg:mt-5
           xl:mt-0
         "
+        @click=" handleShowWhenClicked(price)"
       >
         <div class="w-full">
           {{ btn }}
@@ -89,6 +90,17 @@ export default {
     rating: Number,
     reviewcount: String,
   },
+   
+  methods: {
+        handleShowWhenClicked(price){
+
+            let my_data = {
+                price: price,
+            }
+            
+            this.$emit("showButtonClicked", my_data)
+        }
+    }
 };
 </script>
 

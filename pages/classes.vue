@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="block lg:flex">
     <SidebarContainer>
       <template #hamburgermenuopen>
@@ -57,6 +58,7 @@
         "
       >
         <PurchaseContainer1
+         @showButtonClicked="showPrice"
           v-for="item in card"
           :key="item.id"
           :price="item.price"
@@ -67,8 +69,10 @@
           :reviewcount="item.reviewcount"
         />
       </div>
+
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -154,8 +158,14 @@ export default {
       ],
     };
   },
+  methods: {
+    showPrice(my_data) {
+      alert(my_data.price);
+    },
+  },
 };
 </script>
 
 <style>
+
 </style>
