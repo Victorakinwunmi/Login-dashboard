@@ -160,7 +160,7 @@ export default {
   },
   methods: {
     showPrice(my_data) {
-      alert(my_data.price);
+      alert("The price is"+ " " + my_data.price);
     },
   },
 };
