@@ -1,7 +1,7 @@
 <template>
   <div class="">
       <HeaderLogoMenu/>
-      <div class="block w-full lg:flex justify-between py-44 px-4 bg-gradient-to-t from-primary-100 to-white lg:px-10 lg:py-40 items-center">
+      <div class="block w-full lg:flex justify-between pb-10 pt-44 px-4 bg-gradient-to-t from-primary-100 to-white lg:px-10 lg:pb-10 lg:pt-40 items-center">
         <div class="md:px-4 lg:px-2 w-full mx-auto lg:w-6/12">
           <h1 class="font-semibold text-center lg:text-left mb-8 text-3xl lg:text-5xl text-secondary-100">Welcome to </h1>
           <h1 class="font-bold text-secondary-100 text-center w-full lg:text-left text-5xl lg:text-7xl">Renaissance instructors</h1>
@@ -20,8 +20,8 @@
           <div class="block rounded-xl bg-gray-100 lg:flex px-8 items-center gap-6 py-10 lg:py-16 lg:px-16">
             <div class="w-full lg:w-8/12 py-4">
               <h1 class="text-secondary-100 font-bold text-lg lg:text-4xl">OUR TOUR EVENTS</h1>
-              <div class=" grid-cols-1 grid lg:grid-cols-2 mt-6 lg:mt-10 cursor-pointer">
-                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/orphan.jpg')+ ')' }">
+              <div class=" grid-cols-1 grid lg:grid-cols-2 mt-6 lg:mt-10">
+                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 cursor-pointer shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/orphan.jpg')+ ')' }">
                   <div>
                     <div class="group-hover:opacity-100 duration-500 transition ease-in-out  opacity-0 p-10 text-white bg-black bg-opacity-80 w-full h-80 ">
                         <div class="Font-bold text-base ">
@@ -35,7 +35,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/highschl.jpg')+ ')' }">
+                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 cursor-pointer shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/highschl.jpg')+ ')' }">
                   <div>
                     <div class="group-hover:opacity-100 duration-500 transition ease-in-out  opacity-0 p-10 text-white bg-black bg-opacity-80 w-full h-80 ">
                         <div class="Font-bold text-base ">
@@ -49,7 +49,7 @@
                     </div>
                   </div>
                 </div>
-               <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/aipate.jpg')+ ')' }">
+               <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 cursor-pointer shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/aipate.jpg')+ ')' }">
                   <div>
                     <div class="group-hover:opacity-100 duration-500 transition ease-in-out  opacity-0 p-10 text-white bg-black bg-opacity-80 w-full h-80 ">
                         <div class="Font-bold text-base ">
@@ -63,7 +63,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/img6.jpg')+ ')' }">
+                <div class="group bg-no-repeat bg-cover cursor-pointer bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/img6.jpg')+ ')' }">
                   <div>
                     <div class="group-hover:opacity-100 duration-500 transition ease-in-out  opacity-0 p-10 text-white bg-black bg-opacity-80 w-full h-80 ">
                         <div class="Font-bold text-base ">
@@ -77,7 +77,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="group bg-no-repeat bg-cover bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/a1.jpg')+ ')' }">
+                <div class="group bg-no-repeat bg-cover cursor-pointer bg-center h-80 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/a1.jpg')+ ')' }">
                   <div>
                     <div class="group-hover:opacity-100 duration-500 transition ease-in-out  opacity-0 p-10 text-white bg-black bg-opacity-80 w-full h-80 ">
                         <div class="Font-bold text-base ">
