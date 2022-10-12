@@ -9,14 +9,14 @@
           <img :src="require('@/assets/image/cta.png')" class="w-10/12 md:w-8/12 mx-auto mt-4 lg:mt-0 lg:w-4/12">
       </div>
 
-      <div class="bg-secondary-100 py-16 px-4 lg:px-10 w-full">
+      <div class="bg-secondary-100 py-16 px-4 lg:px-10 w-full" id="about">
         <h1 class="font-bold text-2xl lg:text-4xl mb-10 text-gray-200">ABOUT</h1>
         <div class=" text-white text-base lg:text-2xl leading">
             Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land which was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)
         </div>
       </div>
 
-      <div class="bg-white lg:px-16 lg:py-20">
+      <div class="bg-white lg:px-16 lg:py-20" id="service">
           <div class="block rounded-xl bg-gray-100 lg:flex px-8 items-center gap-6 py-10 lg:py-16 lg:px-16">
             <div class="w-full lg:w-8/12 py-4">
               <h1 class="text-secondary-100 font-bold text-lg lg:text-4xl">OUR TOUR EVENTS</h1>
@@ -193,7 +193,35 @@
            <img :src="require('@/assets/image/img6.jpg')" class="">
         </div>
       </div>
-      
+
+      <div class="py-16 px-28 bg-secondary-100">
+         <div class="block lg:flex justify-between">
+            <div class="w-full md:w-4/12">
+              <h1 class="text-white font-bold text-2xl mb-6">OUR ORGANIZATION</h1>
+              <div class="text-white font-normal">
+                <a href="#about" class="block mb-4">About Us</a>
+                <a href="#service" class="block mb-4">Our Services</a>
+                <a href="#service" class="block mb-4">Our Tour Events</a>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12">
+              <h1 class="text-white font-bold text-2xl mb-6">FOLLOW US</h1>
+              <div class="text-white font-normal">
+                <a href="http://www.facebook.com/Renaissanceinstructors" class="block mb-4">Facebook</a>
+                <a href="mailto:adexvictor94@gmail.com?" target="_blank"  class="block mb-4">Email</a>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12">
+              <h1 class="text-white font-bold text-2xl mb-6">OUR ORGANIZATION</h1>
+              <div class="text-white font-normal">
+                <a href="#about" class="block mb-4">About Us</a>
+                <a href="#service" class="block mb-4">Our Services</a>
+                <a href="#service" class="block mb-4">Our Tour Events</a>
+              </div>
+            </div>
+         </div>
+         
+      </div>
   </div>
 
 </template>
