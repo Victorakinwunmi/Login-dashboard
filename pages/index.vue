@@ -17,7 +17,7 @@
       </div>
 
       <div class="bg-white lg:px-16 lg:py-20">
-          <div class="block rounded-xl bg-gray-100 lg:flex px-8 gap-6 py-10 lg:py-16 lg:px-16">
+          <div class="block rounded-xl bg-gray-100 lg:flex px-8 items-center gap-6 py-10 lg:py-16 lg:px-16">
             <div class="w-full lg:w-8/12 py-4">
               <h1 class="text-secondary-100 font-bold text-lg lg:text-4xl">OUR TOUR EVENTS</h1>
               <div class=" grid-cols-1 grid lg:grid-cols-2 mt-6 lg:mt-10 cursor-pointer">
@@ -124,7 +124,7 @@
                 
               </div>
 
-              <div class="border mx-auto border-gray-200 shadow-xl w-72 lg:w-full py-10 px-8 rounded-xl mt-8">
+              <div class="border mx-auto border-gray-200 shadow-xl w-11/12 lg:w-full py-10 px-8 rounded-xl mt-8">
                 <h1 class="font-bold text-secondary-100 text-xl">UPCOMING EVENTS</h1>
                 <div class="mt-4">Our next program is on Oct 8 at Regina mundi girls secondary school where over 100 students will converge for the battle of wits quiz program and celebrate two outstanding teachers viz;</div>
               </div>
