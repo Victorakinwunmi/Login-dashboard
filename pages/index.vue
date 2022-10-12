@@ -194,29 +194,37 @@
         </div>
       </div>
 
-      <div class="py-16 px-28 bg-secondary-100">
-         <div class="block lg:flex justify-between">
+      <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-100">
+         <div class="block md:flex justify-between">
             <div class="w-full md:w-4/12">
-              <h1 class="text-white font-bold text-2xl mb-6">OUR ORGANIZATION</h1>
+              <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
               <div class="text-white font-normal">
                 <a href="#about" class="block mb-4">About Us</a>
                 <a href="#service" class="block mb-4">Our Services</a>
                 <a href="#service" class="block mb-4">Our Tour Events</a>
               </div>
             </div>
-            <div class="w-full md:w-4/12">
-              <h1 class="text-white font-bold text-2xl mb-6">FOLLOW US</h1>
+            <div class="w-full md:ml-4 lg:ml-0 md:w-4/12">
+              <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">FOLLOW US</h1>
               <div class="text-white font-normal">
                 <a href="http://www.facebook.com/Renaissanceinstructors" class="block mb-4">Facebook</a>
-                <a href="mailto:adexvictor94@gmail.com?" target="_blank"  class="block mb-4">Email</a>
+                <a href="mailto:wahabsegunjohn@gmail.com?" target="_blank"  class="block mb-4">Email</a>
               </div>
             </div>
             <div class="w-full md:w-4/12">
-              <h1 class="text-white font-bold text-2xl mb-6">OUR ORGANIZATION</h1>
+              <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">TELEPHONE</h1>
+              <p class="text-white mb-4 font-semibold">Nigeria (call and WhatsApp)</p>
               <div class="text-white font-normal">
-                <a href="#about" class="block mb-4">About Us</a>
-                <a href="#service" class="block mb-4">Our Services</a>
-                <a href="#service" class="block mb-4">Our Tour Events</a>
+                <div class="flex mb-2">
+                    <div class=" mr-4 mb-2">08033089829</div>
+                    <div class=" mb-2">08132950588</div>
+                </div>
+                <div class="flex mb-4">
+                   <div class="mr-4">08143137880</div>
+                   <div class="">07065317488</div>
+                </div>
+                <h1 class="text-white mb-4 font-semibold">UK (WhatsApp Only)</h1>
+                 <div>+447574907384</div>
               </div>
             </div>
          </div>
