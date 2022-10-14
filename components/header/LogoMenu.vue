@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between px-8 fixed w-full lg:px-16 items-center blur h-20">
-     <div class="w-28 md:w-44 block bg-white rounded-full border-2 mt-16 md:mt-28">
+     <div class="w-28 md:w-32 block bg-white rounded-full border-2 mt-16 md:mt-28">
         <img :src="require('@/assets/image/brandlogo.png')" class="">
      </div>
     <div class="">

@@ -1,12 +1,12 @@
 <template>
   <div class="">
       <HeaderLogoMenu/>
-      <div class="block w-full lg:flex justify-between pb-10 pt-44 px-4 bg-gradient-to-t from-primary-100 to-white lg:px-10 lg:pb-10 lg:pt-40 items-center">
+      <div class="block w-full lg:flex justify-between items-center pb-10 pt-44 px-4 bg-gradient-to-t from-primary-100 to-white lg:px-10 lg:pb-10 lg:pt-40 items-center">
         <div class="md:px-4 lg:px-2 w-full mx-auto lg:w-6/12">
           <h1 class="font-semibold text-center lg:text-left mb-8 text-3xl lg:text-5xl text-secondary-100">Welcome to </h1>
           <h1 class="font-bold text-secondary-100 text-center w-full lg:text-left text-5xl lg:text-7xl">Renaissance instructors</h1>
         </div>
-          <img :src="require('@/assets/image/cta.png')" class="w-10/12 md:w-8/12 mx-auto mt-4 lg:mt-0 lg:w-4/12">
+          <img :src="require('@/assets/image/img1.jpg')" class="w-10/12 md:w-8/12 mx-auto mt-4 lg:mt-0 lg:w-4/12">
       </div>
 
       <div class="bg-secondary-100 py-16 px-4 lg:px-10 w-full" id="about">
@@ -96,7 +96,7 @@
             </div>
             <div class="block lg:w-4/12">
              <h1 class="font-bold px-8 mt-6 lg:mt-0 text-lg lg:text-2xl text-secondary-100">SERVICES WE OFFER EVERY YEAR</h1>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto">
+              <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 mx-auto">
                 <div class="border mx-auto border-gray-300 mt-6 lg:mt-10 py-10 w-11/12 px-8 rounded-xl bg-gray-200 shadow-xl">
                   <img :src="require('@/assets/icon/one.png')" class="mx-auto w-16">
                   <h1 class="text-base text-secondary-100 font-semibold text-center mt-2">
