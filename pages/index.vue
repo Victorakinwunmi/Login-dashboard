@@ -126,7 +126,7 @@
 
               <div class="border mx-auto border-gray-200 shadow-xl w-11/12 lg:w-full py-10 px-8 rounded-xl mt-8">
                 <h1 class="font-bold text-secondary-100 text-xl">UPCOMING EVENTS</h1>
-                <div class="mt-4">Our next program is on Oct 8 at Regina mundi girls secondary school where over 100 students will converge for the battle of wits quiz program and celebrate two outstanding teachers viz;</div>
+                <h1 class="mt-4">{{whois[0]}}</h1>
               </div>
             </div>
           </div> 
@@ -243,9 +243,26 @@ data(){
       third_popup:false,
       fourth_popup:false,
       fifth_popup:false,
+      
+      whois: [
+         `Our next program is on Oct 8 at Regina mundi girls secondary school where over 100 students will converge for the battle of wits quiz program and celebrate two outstanding teachers viz`,
+         `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati dignissimos expedita illo ipsam velit nobis adipisci unde eveniet dolorem quis nulla mollitia, et necessitatibus sapiente neque magni enim debitis!`,
+        ]
+ 
     };
   },
+
+  mounted(){
+    window.setInterval(()=>{
+      this.pollPerson();
+    }, 5000);
+  },
+
   methods:{
+     pollPerson(){
+      const first = this.whois.shift();
+      this.whois = this.whois.concat(first);
+    },
     firstModal(){
       this.first_popup=!this.first_popup;
     },
@@ -263,6 +280,10 @@ data(){
     }
   },
 }
+
+
+   
+
 </script>
 
 <style>
