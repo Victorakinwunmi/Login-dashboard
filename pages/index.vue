@@ -154,7 +154,7 @@
       <BigModal :Show="third_popup" @cancel="thirdModal">
         <template #title>OUR TOUR EVENT</template>
         <div class="block lg:flex items-center">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-6/12 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/aipate.jpg')+ ')' }"></div>
+           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-6/12 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/aipate3.jpg')+ ')' }"></div>
            <div class="w-full lg:w-6/12">
              <div class="font-bold text-xl mb-6">AIPATE BAPTIST CHURCH GRAMMAR SCHOOL</div>
              <h1 class="">In 2019,we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them with life changing seminars</h1>
