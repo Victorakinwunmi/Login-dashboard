@@ -17,7 +17,7 @@
       </div>
 
       <div class="bg-white lg:px-16 lg:py-20" id="service">
-          <div class="block rounded-xl bg-gray-100 lg:flex px-8 items-center gap-6 py-10 lg:py-16 lg:px-16">
+          <div class="block rounded-xl bg-gray-100 lg:flex px-8 gap-6 py-10 lg:py-16 lg:px-16">
             <div class="w-full lg:w-8/12 py-4">
               <h1 class="text-secondary-100 font-bold text-lg lg:text-4xl">OUR TOUR EVENTS</h1>
               <div class=" grid-cols-1 grid lg:grid-cols-2 mt-6 lg:mt-10">
@@ -95,7 +95,7 @@
               </div>
             </div>
             <div class="block lg:w-4/12">
-             <h1 class="font-bold mt-2 text-lg lg:text-2xl text-secondary-100">SERVICES THAT WE OFFER EVERY YEAR:</h1>
+             <h1 class="font-bold px-8 mt-6 lg:mt-0 text-lg lg:text-2xl text-secondary-100">SERVICES WE OFFER EVERY YEAR</h1>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto">
                 <div class="border mx-auto border-gray-300 mt-6 lg:mt-10 py-10 w-11/12 px-8 rounded-xl bg-gray-200 shadow-xl">
                   <img :src="require('@/assets/icon/one.png')" class="mx-auto w-16">
@@ -199,9 +199,10 @@
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
               <div class="text-white font-normal">
-                <a href="#about" class="block mb-4">About Us</a>
-                <a href="#service" class="block mb-4">Our Services</a>
-                <a href="#service" class="block mb-4">Our Tour Events</a>
+                <div @click=" scrollToAbout()" class="block mb-4">About Us</div>
+                <div @click="scrollToTour()"  class="hidden lg:block mb-4">Our Services</div>
+                <div @click="scrollToService()"  class="block lg:hidden mb-4">Our Services</div>
+                <div @click="scrollToTour()" class="block mb-4">Our Tour Events</div>
               </div>
             </div>
             <div class="w-full md:ml-4 lg:ml-0 md:w-4/12">
@@ -247,6 +248,7 @@ data(){
       whois: [
          `Our next program is on Oct 8 at Regina mundi girls secondary school where over 100 students will converge for the battle of wits quiz program and celebrate two outstanding teachers viz`,
          `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati dignissimos expedita illo ipsam velit nobis adipisci unde eveniet dolorem quis nulla mollitia, et necessitatibus sapiente neque magni enim debitis!`,
+         `we have a program on Nov 9 at baptist high school iwo where over 500 students will converge for the battle of witz quiz program`
         ]
  
     };
@@ -263,6 +265,16 @@ data(){
       const first = this.whois.shift();
       this.whois = this.whois.concat(first);
     },
+    scrollToTour(){
+      window.scroll({top:1000 ,behavior:'smooth'})
+    },
+    scrollToService(){
+      window.scroll({top:2800, behavior:'smooth'})
+    },
+    scrollToAbout(){
+      window.scroll({top:400 ,behavior:'smooth'})
+    },
+    
     firstModal(){
       this.first_popup=!this.first_popup;
     },

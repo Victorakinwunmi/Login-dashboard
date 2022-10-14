@@ -86,9 +86,9 @@
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
               <div class="text-white font-normal">
-                <a href="#about" class="block mb-4">About Us</a>
-                <a href="#service" class="block mb-4">Our Services</a>
-                <a href="#service" class="block mb-4">Our Tour Events</a>
+                <nuxt-link to="/" class="block mb-4">About Us</nuxt-link>
+                <nuxt-link to="/" class="block mb-4">Our Services</nuxt-link>
+                <nuxt-link to="/" class="block mb-4">Our Tour Events</nuxt-link>
               </div>
             </div>
             <div class="w-full md:ml-4 lg:ml-0 md:w-4/12">
