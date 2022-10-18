@@ -2,13 +2,12 @@
   <transition name="page">
     
     <div class="fixed top-0 w-full blurm bg-opacity-50 z-90" v-show="Show">
-      <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-center lg:px-0 ">
-        <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-2/4 flex justify-center items-center top-0">
+      <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-end lg:px-0 ">
+        <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-3/4 h-screen mt-16 flex justify-center lg:rounded-t-2xl items-end top-0">
         <transition name="page">
 
-          <div v-show="Show" :class="MaxWidth" class="z-110 relative top-0 overflow-hidden sm:rounded-t-3xl w-full md:max-w-7xl">
-          
-            <div class="top-0 z-50 px-4 sm:px-6 flex items-start justify-between border-b border-accent1-200 shadow-sm">
+          <div v-show="Show" :class="MaxWidth" class="z-110 relative bottom-0 overflow-hidde sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
+            <div class="top-0 z-50 px-4 w-full sm:px-6 flex items-center justify-between border-b border-primary-100 shadow-sm">
               <div class="font-bold text-base sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
                 <slot name="title"></slot>
               </div>
@@ -73,20 +72,26 @@ export default {
   backdrop-filter: blur(6px);
   height: 100%;
 }
-.custom-scroll-y {
+.custom-scroll-y{
   overflow-y: scroll;     
 }
 
 .custom-scroll-y::-webkit-scrollbar {
     width:5px;
     background-color: #fff;
-    border:1px solid #e2e2e2;
+    border:1px solid rgb(238, 233, 233);
 }
 
 .custom-scroll-y::-webkit-scrollbar-thumb {
     width:5px;
     border-radius: 20%;
-    background-color: #b20059;
+    background-color: #9FA25A;
+}
+.h-screen-80{
+  height: 80vh;
+}
+.h-screen-75{
+  height: 75vh;
 }
 
 .m-responsive {

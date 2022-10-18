@@ -12,6 +12,7 @@ module.exports = {
           '100' : '#4A5559'
         }
       }
+      
     },
   },
   variants: {
