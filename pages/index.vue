@@ -5,7 +5,7 @@
       <BigModal :Show="event_tour_modal" @cancel="closeTourEventModal">
         <template #title>{{selected_event_tour.title}}</template>
         <div class="block lg:flex items-center h-full">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' + selected_event_tour.picture +')' }"></div>
+           <div class="group bg-no-repeat bg-cover bg-center py-72 w-full lg:w-4/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' + selected_event_tour.picture +')' }"></div>
            <div class="w-full lg:w-4/6 lg:ml-10">
              <div class="font-bold text-xl lg:text-2xl mb-6 text-primary-400">{{selected_event_tour.subtitle}}</div>
             {{selected_event_tour.text}}
