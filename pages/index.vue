@@ -1,14 +1,28 @@
 <template>
   <div class="">
       <HeaderLogoMenu/>
-      <div class="block w-full lg:flex justify-between px-10 items-center pb-10 py-44 bg-primary-400 lg:py-52">
-        <div class=" max-w-md mx-auto w-full lg:mx-0 lg:px-20 lg:w-6/12">
+
+      <BigModal :Show="event_tour_modal" @cancel="closeTourEventModal">
+        <template #title>{{selected_event_tour.title}}</template>
+        <div class="block lg:flex items-center h-full">
+           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' + selected_event_tour.picture +')' }"></div>
+           <div class="w-full lg:w-4/6 lg:ml-10">
+             <div class="font-bold text-xl lg:text-2xl mb-6 text-primary-400">{{selected_event_tour.subtitle}}</div>
+            {{selected_event_tour.text}}
+
+           </div>
+        </div>
+      </BigModal>
+      <div class="block w-full lg:flex justify-between items-center pb-0 py-44 bg-primary-400">
+        <div class=" max-w-md mx-auto w-full lg:mx-0 lg:px-28 lg:w-6/12">
           <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-5xl text-secondary-500">Welcome to </h1>
           <h1 class="font-bold text-secondary-500 text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
         </div> 
-         <div class="w-full lg:w-6/12 mt-10 lg:mt-0 ">
-           <img :src="require('@/assets/image/img1.jpg')" class="w-full mt-4 px-2 mx-auto xl:mx-0 lg:mt-0 lg:w-11/12">
+        <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
+            <div class="bg-no-repeat bg-cover py-56 lg:h-screen lg:-mt-44 bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } "></div>
+         
          </div>
+          
       </div>
 
       <div class="bg-primary-300 py-16 px-4 lg:px-28 w-full" id="about">
@@ -24,16 +38,14 @@
       <div class=" py-10 md:py-20 px-6 md:px-0">
          <h1 class="text-secondary-500 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto gap-4 md:px-10 lg:px-0">
-           <TourEvent v-for="item in events" :key="item.id"
-             :pic="item.img"
-             :text="item.text"
+           <TourEvent @is_clicked="showEventTourDetails" v-for="item in events" :key="item.id" :tour_event="{text: item.text, picture: item.img, title:item.title, subtitle:item.subtitle}"
            />
          </div>
       </div>
 :
       <div class="py-10 md:py-20 px-6 md:px-0">
         <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-secondary-500">OUR SERVICES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-4 md:px-10 lg:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-6 md:px-10 lg:px-0">
            <OurServices v-for="item in services" :key="item.id" 
             :icon="item.icon"
             :desc="item.desc"
@@ -42,63 +54,12 @@
       </div>
       
 
-      <BigModal :Show="first_popup" @cancel="firstModal">
-        <template #title>OUR TOUR EVENT</template>
-        <div class="block lg:flex items-center h-full">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/karimamodal.jpg')+ ')' }"></div>
-           <div class="w-full lg:w-4/6 lg:ml-10">
-             <div class="font-bold text-xl lg:text-2xl mb-6 text primary-400">KARIMA AMBALI</div>
-            In 2017, during our tour of  some growing schools in Iwo land, we came across Karima Ambali, an Orphan with a great academic potentiality. We paid her school fees and render other soft succour to her some other times. It was indeed fulfilling..We make a tour to the school back again around 2017 and inspired the students and have them books for self improvement.
+      
 
-           </div>
-        </div>
-      </BigModal>
-      <BigModal :Show="second_popup" @cancel="secondModal">
-        <template #title>OUR TOUR EVENT</template>
-        <div class="block lg:flex items-center">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/highschlmodal.jpg')+ ')' }"></div>
-           <div class="w-full lg:w-4/6 lg:ml-10">
-             <div class="font-bold text-xl lg:text-2xl mb-6 text primary-400">BAPTIST HIGH SCHOOL</div>
-             <h1 class="">In 2018, we visited Baptist high school and donated books, school bags  and scholarships to indigent students and reward Late Baba Owojori L. O and another female teacher as our teachers of the year with an award plaques. it was indeed fulfilling.</h1>
-           </div>
-        </div>
-      </BigModal>
-      <BigModal :Show="third_popup" @cancel="thirdModal">
-        <template #title>OUR TOUR EVENT</template>
-        <div class="block lg:flex items-center">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/aipatemodal.jpg')+ ')' }"></div>
-           <div class="w-full lg:w-4/6 lg:ml-10">
-             <div class="font-bold text-xl lg:text-2xl mb-6 text primary-400">AIPATE BAPTIST CHURCH GRAMMAR SCHOOL</div>
-             <h1 class="">In 2019,we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them with life changing seminars</h1>
-           </div>
-        </div>
-      </BigModal>
-      <BigModal :Show="fourth_popup" @cancel="fourthModal">
-        <template #title>OUR TOUR EVENT</template>
-        <div class="block lg:flex items-center">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/iwomodal.jpg')+ ')' }"></div>
-           <div class="w-full lg:w-4/6 lg:ml-10">
-             <div class="font-bold text-xl lg:text-2xl mb-6 text primary-400">IWO GRAMMAR SCHOOL</div>
-             <h1 class="">In 2020 we visited Iwo Grammar school and donated over 500 customised books, school bags and organized quiz competition while our teacher of the year was Baba kunle Lawal who is a formal principal of the schoolcustomised books and school bags for the junior section while we engage them with life changing seminars</h1>
-           </div>
-        </div>
-      </BigModal>
-      <BigModal :Show="fifth_popup" @cancel="fifthModal">
-        <template #title>OUR TOUR EVENT</template>
-        <div class="block lg:flex items-center">
-           <div class="group bg-no-repeat bg-cover bg-center h-96 w-full lg:w-2/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/a1modal.jpg')+ ')' }"></div>
-           <div class="w-full lg:w-4/6 lg:ml-10">
-             <div class="font-bold text-xl lg:text-2xl mb-6 text primary-400">A1 GRAMMAR SCHOOL</div>
-             <h1 class="">
-                  In 2021,The Renaissance instructors conference was set up at A1 comprehensive Grammar school with the theme Total education and talks like effects of drug Abuse by Dr. Abolude while Mr Asifat omowumi Moronkeji talked about entrepreneur and students. Elder Amos Idowu, Deacon Victor Idowu and professor Lasisi  were our teachers of the year. Students were given awards , bags and other soft items.
-                  life changing seminars</h1>
-           </div>
-        </div>
-      </BigModal>
 
       <div class="bg-gray-200 w-full py-10 ">
         <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 mb-8 lg:text-4xl ">GALLERY</h1>
-          <div class="text-black text-7xl">carousel</div>
+          <div class="text-black text-7xl"></div>
       </div>
 
     <Footer/>
@@ -111,45 +72,45 @@
 export default {
 data(){
     return{
-      first_popup:false,
-      second_popup:false,
-      third_popup:false,
-      fourth_popup:false,
-      fifth_popup:false,
       show_info:false,
+      selected_event_tour: '',
+      event_tour_modal: false,
      
-      
-      whois: [
-         `Our next program is on Oct 8 at Regina mundi girls secondary school where over 100 students will converge for the battle of wits quiz program and celebrate two outstanding teachers viz`,
-         `Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati dignissimos expedita illo ipsam velit nobis adipisci unde eveniet dolorem quis nulla mollitia, et necessitatibus sapiente neque magni enim debitis!`,
-         `we have a program on Nov 9 at baptist high school iwo where over 500 students will converge for the battle of witz quiz program`
-        ],
-
       events:[
         {
           id:1,
           img:require('@/assets/image/orphan.jpg'),
           text:" In 2017, during our tour of  some growing schools in Iwo land, we came across Karima Ambali, an Orphan with a great academic potentiality. We paid her school fees and",
+          title:'Karima Ambali',
+          subtitle:'2017'
         },
          {
           id:2,
           img:require('@/assets/image/highschl.jpg'),
           text:"In 2018, we visited Baptist high school and donated books, school bags  and scholarships to indigent students and reward Late Baba Owojori L. O ",
+          title:'Baptist High School',
+          subtitle:'2018'
         },
          {
           id:3,
           img:require('@/assets/image/aipate.jpg'),
-          text:"In 2019,we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them ",
+          text:"In 2019, we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them ",
+          title:'Aipate Baptist Church Grammar School ',
+          subtitle:'2019'
         },
          {
           id:4,
           img:require('@/assets/image/iwogram.jpg'),
-          text:"In 2020 we visited Iwo Grammar school and donated over 500 customised books, school bags and organized quiz competition while our teacher of the year was Baba kunle Lawal",
+          text:"In 2020, we visited Iwo Grammar school and donated over 500 customised books, school bags and organized quiz competition while our teacher of the year was Baba kunle Lawal",
+          title:'Iwo Grammar School',
+          subtitle:'2020'
         },
         {
           id:5,
           img:require('@/assets/image/a1.jpg'),
-          text:"  In 2021,The Renaissance instructors conference was set up at A1 comprehensive Grammar school with the theme Total education and talks like effects of drug Abuse by Dr. Abolude ",
+          text:"  In 2021, The Renaissance instructors conference was set up at A1 comprehensive Grammar school with the theme Total education and talks like effects of drug Abuse by Dr. Abolude ",
+          title:' A1 comprehensive Grammar School',
+          subtitle:'2021'
         },
       ],
       services:[
@@ -178,39 +139,26 @@ data(){
     };
   },
 
-  mounted(){
-    window.setInterval(()=>{
-      this.pollPerson();
-    }, 5000);
-  },
 
   methods:{
+
+    showEventTourDetails(item) {
+      console.log(item)
+      this.selected_event_tour = item
+      this.event_tour_modal =  true
+    },
+
     showText(){
       this.show_info=!this.show_info
     },
     hideText(){
       this.show_info=!this.show_info
     },
-     pollPerson(){
-      const first = this.whois.shift();
-      this.whois = this.whois.concat(first);
-    },
+   closeTourEventModal(){
+    this.event_tour_modal=!this.event_tour_modal
+   }
     
-    firstModal(){
-      this.first_popup=!this.first_popup;
-    },
-    secondModal(){
-      this.second_popup=!this.second_popup;
-    },
-     thirdModal(){
-      this.third_popup=!this.third_popup;
-    },
-    fourthModal(){
-      this.fourth_popup=!this.fourth_popup;
-    },
-    fifthModal(){
-      this.fifth_popup =!this.fifth_popup;
-    }
+    
   },
 }
 
@@ -220,5 +168,4 @@ data(){
 </script>
 
 <style>
-
 </style> 

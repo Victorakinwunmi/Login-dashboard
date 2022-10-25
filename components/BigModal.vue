@@ -1,14 +1,14 @@
 <template>
   <transition name="page">
     
-    <div class="fixed top-0 w-full blurm bg-opacity-50 z-90" v-show="Show">
+    <div class="fixed top-0 w-full blurm bg-opacity-50 z-50" v-show="Show">
       <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-end lg:px-0 ">
         <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-3/4 h-screen lg:mt-16 lg:mt-28 flex justify-center lg:rounded-t-2xl items-end top-0">
         <transition name="page">
 
           <div v-show="Show" :class="MaxWidth" class="z-110 relative bottom-0 overflow-hidden sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
             <div class="top-0 z-50 px-4 w-full sm:px-6 flex items-center justify-between border-b border-primary-400 shadow-sm">
-              <div class="font-bold text-base sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
+              <div class="font-bold text-base text-secondary-500 sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
                 <slot name="title"></slot>
               </div>
               <div class="">
