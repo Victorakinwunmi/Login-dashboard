@@ -3,7 +3,7 @@
     
     <div class="fixed top-0 w-full blurm bg-opacity-50 z-90" v-show="Show">
       <div class="relative min-h-screen bg-white bg-opacity-25 flex justify-center items-end lg:px-0 ">
-        <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-3/4 h-screen mt-16 flex justify-center lg:rounded-t-2xl items-end top-0">
+        <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-3/4 h-screen lg:mt-16 lg:mt-28 flex justify-center lg:rounded-t-2xl items-end top-0">
         <transition name="page">
 
           <div v-show="Show" :class="MaxWidth" class="z-110 relative bottom-0 overflow-hidde sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
