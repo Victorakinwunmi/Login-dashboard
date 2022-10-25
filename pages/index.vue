@@ -80,35 +80,35 @@ data(){
         {
           id:1,
           img:require('@/assets/image/orphan.jpg'),
-          text:" In 2017, during our tour of  some growing schools in Iwo land, we came across Karima Ambali, an Orphan with a great academic potentiality. We paid her school fees and",
+          text:" In 2017, during our tour of  some growing schools in Iwo land, we came across Karima Ambali, an Orphan with a great academic potentiality. We paid her school fees and render other soft succour to her some other times. It was indeed fulfilling. We make tour to the school back again around 2017 and inspired the students and have them books for self improvement",
           title:'Karima Ambali',
           subtitle:'2017'
         },
          {
           id:2,
           img:require('@/assets/image/highschl.jpg'),
-          text:"In 2018, we visited Baptist high school and donated books, school bags  and scholarships to indigent students and reward Late Baba Owojori L. O ",
+          text:"In 2018, we visited Baptist high school and donated books, school bags  and scholarships to indigent students and reward Late Baba Owojori L. O and anoter female teacher of the year with an award plaques. It was indeed fulfilling",
           title:'Baptist High School',
           subtitle:'2018'
         },
          {
           id:3,
           img:require('@/assets/image/aipate.jpg'),
-          text:"In 2019, we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them ",
+          text:"In 2019, we visited Aipate Baptist Church Grammar school and donated over 300 customised books and school bags for the junior section while we engage them with life changing seminars ",
           title:'Aipate Baptist Church Grammar School ',
           subtitle:'2019'
         },
          {
           id:4,
           img:require('@/assets/image/iwogram.jpg'),
-          text:"In 2020, we visited Iwo Grammar school and donated over 500 customised books, school bags and organized quiz competition while our teacher of the year was Baba kunle Lawal",
+          text:"In 2020, we visited Iwo Grammar school and donated over 500 customised books, school bags and organized quiz competition while our teacher of the year was Baba kunle Lawal who is a former principal of the school",
           title:'Iwo Grammar School',
           subtitle:'2020'
         },
         {
           id:5,
           img:require('@/assets/image/a1.jpg'),
-          text:"  In 2021, The Renaissance instructors conference was set up at A1 comprehensive Grammar school with the theme Total education and talks like effects of drug Abuse by Dr. Abolude ",
+          text:"  In 2021, The Renaissance instructors conference was set up at A1 comprehensive Grammar school with the theme Total education and talks like effects of drug Abuse by Dr. Abolude while Mr Asifat Omowunmi Morenikeji talked about enterpreneur and students. Elder Amos Idowu, Deacon Victor Idowu and professor Lasisi were our teachers of the year. Students were given awards, bags and other soft items",
           title:' A1 comprehensive Grammar School',
           subtitle:'2021'
         },
