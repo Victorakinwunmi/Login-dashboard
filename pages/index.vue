@@ -21,7 +21,7 @@
 
       <div class=" py-10 md:py-20 px-6 md:px-0">
          <h1 class="text-secondary-100 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto  md:px-10 lg:px-0">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto md:px-10 lg:px-0">
            <TourEvent v-for="item in events" :key="item.id"
              :pic="item.img"
              :text="item.text"
