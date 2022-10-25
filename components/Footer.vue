@@ -1,5 +1,5 @@
 <template>
-    <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-100">
+    <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-500">
          <div class="block md:flex justify-between">
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>

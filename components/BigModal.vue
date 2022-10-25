@@ -6,8 +6,8 @@
         <div class="bg-white w-full md:w-3/4 shadow-2xl xl:w-3/4 h-screen lg:mt-16 lg:mt-28 flex justify-center lg:rounded-t-2xl items-end top-0">
         <transition name="page">
 
-          <div v-show="Show" :class="MaxWidth" class="z-110 relative bottom-0 overflow-hidde sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
-            <div class="top-0 z-50 px-4 w-full sm:px-6 flex items-center justify-between border-b border-primary-100 shadow-sm">
+          <div v-show="Show" :class="MaxWidth" class="z-110 relative bottom-0 overflow-hidden sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
+            <div class="top-0 z-50 px-4 w-full sm:px-6 flex items-center justify-between border-b border-primary-400 shadow-sm">
               <div class="font-bold text-base sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
                 <slot name="title"></slot>
               </div>
