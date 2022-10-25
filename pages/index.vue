@@ -2,11 +2,13 @@
   <div class="">
       <HeaderLogoMenu/>
       <div class="block w-full lg:flex justify-between px-10 items-center pb-10 py-44 bg-primary-100 lg:py-52">
-        <div class=" max-w-md mx-auto lg:mx-0 lg:px-20 lg:w-6/12">
-          <h1 class="font-semibold text-center lg:text-left mb-8 text-3xl lg:text-5xl text-secondary-100">Welcome to </h1>
-          <h1 class="font-bold text-secondary-100 text-center w-full lg:text-left text-4xl lg:text-5xl">RENAISSANCE INSTRUCTORS</h1>
+        <div class=" max-w-md mx-auto w-full lg:mx-0 lg:px-20 lg:w-6/12">
+          <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-5xl text-secondary-100">Welcome to </h1>
+          <h1 class="font-bold text-secondary-100 text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
         </div> 
-          <img :src="require('@/assets/image/img1.jpg')" class=" w-10/12 md:w-8/12 mt-4 px-2 mx-auto lg:mt-0 lg:w-6/12">
+         <div class="w-full lg:w-6/12 mt-10 lg:mt-0 ">
+           <img :src="require('@/assets/image/img1.jpg')" class="w-full mt-4 px-2 mx-auto xl:mx-0 lg:mt-0 lg:w-11/12">
+         </div>
       </div>
 
       <div class="bg-primary-200 py-16 px-4 lg:px-28 w-full" id="about">
@@ -21,17 +23,17 @@
 
       <div class=" py-10 md:py-20 px-6 md:px-0">
          <h1 class="text-secondary-100 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto md:px-10 lg:px-0">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto gap-4 md:px-10 lg:px-0">
            <TourEvent v-for="item in events" :key="item.id"
              :pic="item.img"
              :text="item.text"
            />
          </div>
       </div>
-
+:
       <div class="py-10 md:py-20 px-6 md:px-0">
         <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-secondary-100">OUR SERVICES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto md:px-10 lg:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-4 md:px-10 lg:px-0">
            <OurServices v-for="item in services" :key="item.id" 
             :icon="item.icon"
             :desc="item.desc"
