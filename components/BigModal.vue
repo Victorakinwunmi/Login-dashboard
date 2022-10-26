@@ -8,7 +8,7 @@
 
           <div v-show="Show" :class="MaxWidth" class="z-50 relative bottom-0 overflow-hidden sm:rounded-t-3xl h-full w-full md:max-w-7xl">    
             <div class="top-0 z-50 px-4 w-full sm:px-6 flex items-center justify-between border-b border-primary-400 shadow-sm">
-              <div class="font-bold text-base text-secondary-500 sm:text-xl md:text-2xl py-6 md:px-6 mr-2">
+              <div class="font-bold text-xl text-secondary-500 sm:text-xl md:text-3xl py-6 md:px-6 mr-2">
                 <slot name="title"></slot>
               </div>
               <div class="">

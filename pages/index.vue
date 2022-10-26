@@ -5,11 +5,10 @@
       <BigModal :Show="event_tour_modal" @cancel="closeTourEventModal">
         <template #title>{{selected_event_tour.title}}</template>
         <div class="block lg:flex items-center h-full">
-           <div class="group bg-no-repeat bg-cover bg-top py-60 lg:py-72 w-full lg:w-4/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' + selected_event_tour.picture +')' }"></div>
+           <div class="group bg-no-repeat bg-cover bg-top py-60 rounded-xl lg:py-72 w-full lg:w-4/6 mr-4 mb-4 shadow-xl" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' + selected_event_tour.picture +')' }"></div>
            <div class="w-full lg:w-4/6 lg:ml-10">
              <div class="font-bold text-xl lg:text-2xl mb-6 text-primary-400">{{selected_event_tour.subtitle}}</div>
-            {{selected_event_tour.text}}
-
+             <div class="text-lg"> {{selected_event_tour.text}}</div>
            </div>
         </div>
       </BigModal>
@@ -28,10 +27,10 @@
       <div class="bg-primary-300 py-16 px-4 lg:px-28 w-full" id="about">
         <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
         <div>
-            <p class="text-secondary-500 text-base lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
-            <p :class="show_info?'text-secondary-500 text-base mt-2 lg:text-2xl leading':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
-            <button :class="show_info?'hidden':'block'" @click="showText" class="text-green-900 text-base mt-2">Show more</button>
-            <button  :class="show_info?'block':'hidden'"  @click="hideText" class="text-green-900 text-base mt-2">Show less</button>
+            <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
+            <p :class="show_info?'text-secondary-500 text-lg mt-2 lg:text-2xl leading':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
+            <button :class="show_info?'hidden':'block'" @click="showText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show more</button>
+            <button  :class="show_info?'block':'hidden'"  @click="hideText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show less</button>
         </div>
       </div>
 
@@ -42,10 +41,10 @@
            />
          </div>
       </div>
-:
+
       <div class="py-10 md:py-20 px-6 md:px-0">
         <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-secondary-500">OUR SERVICES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-6 md:px-10 lg:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
            <OurServices v-for="item in services" :key="item.id" 
             :icon="item.icon"
             :desc="item.desc"
@@ -57,7 +56,7 @@
       
 
 
-      <div class="bg-gray-200 w-full py-10 ">
+      <div class="bg-gray-200 mt-6 w-full py-10 ">
         <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 mb-8 lg:text-4xl ">GALLERY</h1>
           <div class="text-black text-7xl"></div>
       </div>
