@@ -18,7 +18,9 @@
           <h1 class="font-bold text-secondary-500 text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
         </div> 
         <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
-            <div class="bg-no-repeat bg-cover py-56 lg:h-screen lg:-mt-44 bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } "></div>
+            <div class="bg-no-repeat bg-cover bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } ">
+             <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-44 "></div>
+            </div>
          
          </div>
           
@@ -58,7 +60,41 @@
 
       <div class="bg-gray-200 mt-6 w-full py-10 ">
         <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 mb-8 lg:text-4xl ">GALLERY</h1>
-          <div class="text-black text-7xl"></div>
+          <div class="text-black text-7xl w-full"></div>
+           <agile  :navButtons="false" :cssEase="linear" :infinite="true" :slidesToShow=2 :autoplaySpeed=5000 :speed=18000 :autoplay="true"   >
+                <div class="slide">
+                  <div class="bg-no-repeat bg-cover w-full bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/karimamodal.jpg')+ ')' } ">
+                   <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                  </div>
+                </div>
+                <div class="slide">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/iwomodal.jpg')+ ')' } ">
+                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/aipatemodal.jpg')+ ')' } ">
+                     <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/highschlmodal.jpg')+ ')' } ">
+                     <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/a1modal.jpg')+ ')' } ">
+                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/iwomodal.jpg')+ ')' } ">
+                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
+              
+  
+          </agile>
       </div>
 
     <Footer/>
@@ -68,13 +104,20 @@
 </template>
 
 <script>
+import { VueAgile } from 'vue-agile'
+
+
 export default {
+components: {
+    agile: VueAgile ,
+},
+
 data(){
     return{
       show_info:false,
       selected_event_tour: '',
       event_tour_modal: false,
-     
+        
       events:[
         {
           id:1,
@@ -142,7 +185,6 @@ data(){
   methods:{
 
     showEventTourDetails(item) {
-      console.log(item)
       this.selected_event_tour = item
       this.event_tour_modal =  true
     },
