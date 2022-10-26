@@ -1,6 +1,6 @@
 <template>
     <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-500">
-         <div class="block md:flex justify-between">
+         <div class="ml-0 lg:ml-16 block md:flex justify-between">
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
               <div class="text-white font-normal">
@@ -11,7 +11,7 @@
                  <button @click="scrollToTourMobile()" class="block mb-4 lg:hidden">Our Tour Events</button>
               </div>
             </div>
-            <div class="w-full md:ml-4 lg:ml-0 md:w-4/12">
+            <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">FOLLOW US</h1>
               <div class="text-white font-normal">
                 <a href="http://www.facebook.com/Renaissanceinstructors" class="block mb-4">Facebook</a>

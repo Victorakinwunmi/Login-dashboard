@@ -14,12 +14,12 @@
       </BigModal>
       <div class="block w-full lg:flex justify-between items-center pb-0 py-44 bg-primary-400">
         <div class=" max-w-md mx-auto w-full lg:mx-0 lg:px-28 lg:w-6/12">
-          <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-5xl text-secondary-500">Welcome to </h1>
-          <h1 class="font-bold text-secondary-500 text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
+          <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
+          <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
         </div> 
         <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
             <div class="bg-no-repeat bg-cover bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } ">
-             <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-44 "></div>
+             <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-28 "></div>
             </div>
          
          </div>
@@ -58,10 +58,10 @@
       
 
 
-      <div class="bg-gray-200 mt-6 w-full py-10 ">
-        <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 mb-8 lg:text-4xl ">GALLERY</h1>
+      <div class="bg-gray-300 mt-6 w-full py-16 ">
+        <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 lg:mb-8 lg:text-4xl ">GALLERY</h1>
           <div class="text-black text-7xl w-full"></div>
-           <agile  :navButtons="false" :cssEase="linear" :infinite="true" :slidesToShow=2 :autoplaySpeed=5000 :speed=18000 :autoplay="true"   >
+           <agile  :navButtons="false" :infinite="true" :slidesToShow=2 :autoplaySpeed=5000 :speed=18000 :autoplay="true"   >
                 <div class="slide">
                   <div class="bg-no-repeat bg-cover w-full bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/karimamodal.jpg')+ ')' } ">
                    <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>

@@ -1,8 +1,6 @@
 <template>
-  <div class="flex justify-between z-50 px-8 fixed w-full lg:px-16 items-center blur h-20">
-       <div class="w-16 md:w-24 block bg-white rounded-full border-2 mt-16 md:mt-28">
-        <img :src="require('@/assets/image/brandlogo.png')" class="">
-       </div>
+  <div class="flex justify-between z-50 px-8 fixed w-full lg:px-16 items-center bg-primary-300 h-20">
+        <img :src="require('@/assets/image/brandlogo.png')" class="w-14">
       <div class="">
           <div :class="is_revealed ? 'hidden' : 'block lg:hidden'" @click="showMenu" class="">
             <img :src="require('@/assets/icon/menu.png')" class="w-10 mt-1 z-50">
