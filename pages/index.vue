@@ -28,7 +28,7 @@
       </div>
 
       <div class="bg-primary-300 py-16 w-full" id="about">
-          <div class="mx-auto container">
+          <div class="px-4 lg:px-0 mx-auto container">
              <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
             <div>
               <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
