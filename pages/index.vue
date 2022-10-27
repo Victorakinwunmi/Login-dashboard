@@ -53,48 +53,44 @@
            /> 
         </div>
       </div>
-      
 
-      
-
-
-      <div class="bg-gray-300 mt-6 w-full py-16 ">
+      <div class="bg-gray-300 mt-6 w-full py-16 lg:pt-16 lg:pb-13 ">
         <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 lg:mb-8 lg:text-4xl ">GALLERY</h1>
-          <div class="text-black text-7xl w-full"></div>
-           <agile  :navButtons="false" :infinite="true" :slidesToShow=2 :autoplaySpeed=5000 :speed=18000 :autoplay="true"   >
-                <div class="slide">
+          <div class="text-black text-7xl w-full"></div> 
+             <VueSlickCarousel v-bind="settings">
+                <div class="">
                   <div class="bg-no-repeat bg-cover w-full bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/karimamodal.jpg')+ ')' } ">
                    <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                   </div>
                 </div>
-                <div class="slide">
+                <div class="">
                     <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/iwomodal.jpg')+ ')' } ">
                       <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="">
                     <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/aipatemodal.jpg')+ ')' } ">
                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="">
                     <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/highschlmodal.jpg')+ ')' } ">
                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="">
                     <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/a1modal.jpg')+ ')' } ">
                       <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="">
                     <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/iwomodal.jpg')+ ')' } ">
                       <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
                     </div>
                 </div>
-              
-  
-          </agile>
+              </VueSlickCarousel>
+           <div>
+  </div>
       </div>
 
     <Footer/>
@@ -104,20 +100,73 @@
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile'
+// import { VueAgile } from 'vue-agile'
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
 
 export default {
-components: {
-    agile: VueAgile ,
-},
+// components: {
+//     // agile: VueAgile ,
+// },
+ name: 'MyComponent',
+components: { VueSlickCarousel },
 
 data(){
     return{
       show_info:false,
       selected_event_tour: '',
       event_tour_modal: false,
+      settings:{
+        "arrows": false,
+        "dots": false,
+        "infinite": true,
+        "slidesToShow": 3,
+        "slidesToScroll": 1,
+        "autoplay": true,
+        "speed": 10000,
+        "autoplaySpeed": 5000,
+        "cssEase": "linear",
+        "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 2,
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "speed": 10000,
+        "autoplaySpeed": 5000,
+        "cssEase": "linear",
         
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "speed": 10000,
+        "autoplaySpeed": 5000,
+        "cssEase": "linear",
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "speed": 10000,
+        "autoplaySpeed": 5000,
+        "cssEase": "linear"
+      }
+    }
+   ]
+      },
       events:[
         {
           id:1,
