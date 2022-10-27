@@ -12,33 +12,36 @@
            </div>
         </div>
       </BigModal>
-      <div class="block w-full lg:flex justify-between items-center pb-0 py-44 bg-primary-400">
-        <div class=" max-w-md mx-auto w-full lg:mx-0 lg:px-28 lg:w-6/12">
-          <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
-          <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
-        </div> 
-        <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
-            <div class="bg-no-repeat bg-cover bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } ">
-             <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-28 "></div>
+      <div class="block w-full pb-0 py-44 bg-primary-400">
+        <div class="mx-auto container lg:flex justify-between items-center">
+            <div class=" max-w-md mx-auto w-full lg:mx-0 lg:w-6/12">
+              <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
+              <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
+            </div> 
+            <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
+              <div class="bg-no-repeat bg-cover bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } ">
+               <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-28 "></div>
+              </div>
             </div>
-         
-         </div>
+        </div>
           
       </div>
 
-      <div class="bg-primary-300 py-16 px-4 lg:px-28 w-full" id="about">
-        <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
-        <div>
-            <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
-            <p :class="show_info?'text-secondary-500 text-lg mt-2 lg:text-2xl leading':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
-            <button :class="show_info?'hidden':'block'" @click="showText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show more</button>
-            <button  :class="show_info?'block':'hidden'"  @click="hideText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show less</button>
-        </div>
+      <div class="bg-primary-300 py-16 w-full" id="about">
+          <div class="mx-auto container">
+             <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
+            <div>
+              <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
+              <p :class="show_info?'text-secondary-500 text-lg mt-2 lg:text-2xl leading':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
+              <button :class="show_info?'hidden':'block'" @click="showText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show more</button>
+              <button  :class="show_info?'block':'hidden'"  @click="hideText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show less</button>
+            </div>
+          </div>
       </div>
 
       <div class=" py-10 md:py-20 px-6 md:px-0">
          <h1 class="text-secondary-500 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:max-w-7xl mx-auto gap-4 md:px-10 lg:px-0">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 container mx-auto gap-4 md:px-10 lg:px-0">
            <TourEvent @is_clicked="showEventTourDetails" v-for="item in events" :key="item.id" :tour_event="{text: item.text, picture: item.img, title:item.title, subtitle:item.subtitle}"
            />
          </div>
@@ -46,7 +49,7 @@
 
       <div class="py-10 md:py-20 px-6 md:px-0">
         <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-secondary-500">OUR SERVICES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
            <OurServices v-for="item in services" :key="item.id" 
             :icon="item.icon"
             :desc="item.desc"
@@ -54,7 +57,7 @@
         </div>
       </div>
 
-      <div class="bg-gray-300 mt-6 w-full py-16 lg:pt-16 lg:pb-13 ">
+      <div class=" w-full py-12 lg:pt-16 lg:pb-13 ">
         <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 lg:mb-8 lg:text-4xl ">GALLERY</h1>
           <div class="text-black text-7xl w-full"></div> 
              <VueSlickCarousel v-bind="settings">
@@ -100,15 +103,11 @@
 </template>
 
 <script>
-// import { VueAgile } from 'vue-agile'
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
 
 export default {
-// components: {
-//     // agile: VueAgile ,
-// },
  name: 'MyComponent',
 components: { VueSlickCarousel },
 

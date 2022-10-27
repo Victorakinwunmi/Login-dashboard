@@ -1,6 +1,7 @@
 <template>
-    <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-500">
-         <div class="ml-0 lg:ml-16 block md:flex justify-between">
+    <div class="bg-secondary-500">
+      <div class="py-8 px-10 lg:px-0 md:py-16 container mx-auto w-full bg-secondary-500">
+         <div class="ml-0 w-full block md:flex justify-between">
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
               <div class="text-white font-normal">
@@ -34,9 +35,9 @@
                  <div>+447574907384</div>
               </div>
             </div>
-         </div>
-         
+         </div>   
       </div>
+    </div>
 </template>
 
 <script>

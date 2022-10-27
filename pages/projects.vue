@@ -2,8 +2,8 @@
   <div>
      <HeaderLogoMenu/>
       <div class="group bg-no-repeat bg-cover  " :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/img2.jpg')+ ')' }">
-        <div class=" bg-gradient-to-br from-primary-500 px-8 md:px-16 bg-opacity-80 lg:px-28 pb-16 py-56 lg:py-64">
-          <div class="max-w-2xl lg:max-w-4xl bg-white bg-opacity-80 lg:bg-opacity-60 rounded-xl p-10">
+        <div class=" bg-gradient-to-br from-primary-500 px-8 w-full bg-opacity-80 pb-16 py-56 lg:py-64">
+          <div class="max-w-2xl lg:max-w-4xl container mx-auto bg-white bg-opacity-80 lg:bg-opacity-60 rounded-xl p-10">
             <h1 class="text-2xl lg:text-5xl text-secondary-500 font-bold">Our past campaigns have enabled us to</h1>
             <div class="flex gap-2 items-center mt-6">
               <img :src="require('@/assets/icon/promote.png')" class="">
@@ -87,7 +87,8 @@
         </div>
       </div>
 
-       <div class="py-8 px-14 md:py-16 md:px-16 lg::px-28 mx-auto w-full bg-secondary-500">
+    <div class="bg-secondary-500 w-full">
+         <div class="py-8 px-10 lg:px-0 md:py-16 container mx-auto w-full bg-secondary-500">
          <div class="block md:flex justify-between">
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">OUR ORGANIZATION</h1>
@@ -123,6 +124,7 @@
          </div>
          
       </div>
+    </div>
   </div>
 </template>
 
