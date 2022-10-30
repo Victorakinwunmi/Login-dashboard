@@ -13,14 +13,13 @@
         </div>
       </BigModal>
       <div class="block w-full pb-0 py-44 bg-primary-400">
-        <div class="mx-auto container lg:flex justify-between items-center">
+        <div class="mx-auto container lg:flex gap-20 justify-between items-center">
             <div class=" max-w-md mx-auto w-full lg:mx-0 lg:w-6/12">
               <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
               <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
             </div> 
-            <div class="w-full lg:w-6/12 mt-10 lg:mt-0"> 
-              <div class="bg-no-repeat bg-cover bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/img1.jpg')+ ')' } ">
-               <div class="bg-black bg-opacity-10 py-56 lg:h-screen lg:-mt-28 "></div>
+            <div class="w-full mt-10 lg:mt-0"> 
+              <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover max-w-md mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.jpg')+ ')' } ">
               </div>
             </div>
         </div>

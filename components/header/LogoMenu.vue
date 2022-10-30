@@ -54,4 +54,5 @@ export default {
   background:hsla(0, 0%, 0%, 0.1);
   backdrop-filter: blur(10px);
 }
+
 </style>
