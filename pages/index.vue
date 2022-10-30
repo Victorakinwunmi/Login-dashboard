@@ -19,7 +19,7 @@
               <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
             </div> 
             <div class="w-full mt-10 lg:mt-0"> 
-              <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover max-w-md mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.jpg')+ ')' } ">
+              <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover max-w-md mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.JPG')+ ')' } ">
               </div>
             </div>
         </div>
