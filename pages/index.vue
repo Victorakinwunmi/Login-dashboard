@@ -41,7 +41,7 @@
 
       <div class=" py-10 md:py-20 px-6 md:px-0">
          <h1 class="text-secondary-500 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 container mx-auto gap-4 md:px-10 lg:px-0">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 container mx-auto gap-6 md:px-10 lg:px-0">
            <TourEvent @is_clicked="showEventTourDetails" v-for="item in events" :key="item.id" :tour_event="{text: item.text, picture: item.img, title:item.title, subtitle:item.subtitle}"
            />
          </div>
