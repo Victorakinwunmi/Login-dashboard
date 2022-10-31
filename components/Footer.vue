@@ -50,13 +50,13 @@ methods:{
       window.scroll({top:1700, behavior:'smooth'})
     },
     scrollToAbout(){
-      window.scroll({top:400 ,behavior:'smooth'})
+      window.scroll({top:800 ,behavior:'smooth'})
     },
     scrollToTourMobile(){
-      window.scroll({top:750 ,behavior:'smooth'})
+      window.scroll({top:1400 ,behavior:'smooth'})
     },
     scrollToServiceMobile(){
-      window.scroll({top:2700 ,behavior:'smooth'})
+      window.scroll({top:3400 ,behavior:'smooth'})
     }
 }
 }
