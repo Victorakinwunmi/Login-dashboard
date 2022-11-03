@@ -22,7 +22,7 @@
               <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover w-full mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.JPG')+ ')' } ">
               </div>
             </div>
-            <div class="w-full block md:hidden mt-10 lg:mt-0"> 
+            <div class="w-full block md:hidden mt-10 overflow-hidden block h-40"> 
               <img :src="require('@/assets/image/callta2.JPG')" class="w-full">
             </div>
         </div>
