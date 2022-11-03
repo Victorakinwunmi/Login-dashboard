@@ -10,7 +10,7 @@
           </div>
         </div>
         <div :class="is_revealed ? 'block' : 'hidden lg:hidden'" @click="hideMenu" class="">
-              <img :src="require('@/assets/icon/close.png')" class="w-10 z-50">
+              <img :src="require('@/assets/icon/close.png')" class="w-8 z-50">
         </div>
         <div :class="
             is_revealed ? 'block top-20 right-0 p-10 w-full justify-between flex h-screen z-50 absolute bg-gradient-to-t from-white to-primary-400 ': 'hidden lg:flex lg:w-7/12 lg:justify-end'

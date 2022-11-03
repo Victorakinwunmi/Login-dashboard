@@ -13,12 +13,12 @@
         </div>
       </BigModal>
       <div class="block w-full pb-0 py-44 bg-primary-400">
-        <div class="mx-auto container lg:flex gap-20 justify-between items-center">
-            <div class=" max-w-md mx-auto w-full lg:mx-0 lg:w-6/12">
+        <div class="mx-auto container gap-6 lg:flex justify-between items-center">
+            <div class=" max-w-md mx-auto w-full lg:mx-0 lg:w-5/12">
               <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
               <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
             </div> 
-            <div class="w-full mt-10 lg:mt-0"> 
+            <div class="w-full lg:w-7/12 mt-10 lg:mt-0"> 
               <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover w-full mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.JPG')+ ')' } ">
               </div>
             </div>
@@ -46,18 +46,19 @@
          </div>
       </div>
 
-      <div class="py-10 md:py-20 px-6 md:px-0">
-        <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-secondary-500">OUR SERVICES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
-           <OurServices v-for="item in services" :key="item.id" 
-            :icon="item.icon"
-            :desc="item.desc"
-           /> 
+      <div class="bg-no-repeat bg-cover bg-center" :style="{backgroundRepeat: 'no-repeat' + ';' , backgroundImage: 'url(' + require('@/assets/image/alma.jpg') +')'}">
+        <div class="bg-black bg-opacity-70 px-6 lg:px-0 mx-auto py-8 lg:py-28">
+          <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-white">OUR SERVICES</h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
+            <OurServices v-for="item in services" :key="item.id" 
+              :icon="item.icon"
+              :desc="item.desc"
+            /> 
+          </div>
         </div>
       </div>
 
-      <div class=" w-full py-12 lg:pt-16 lg:pb-13 ">
-        <h1 class="font-bold text-center text-lg text-secondary-500 lg:px-28 text-lg text-center mb-4 lg:mb-8 lg:text-4xl ">GALLERY</h1>
+      <div class=" w-full py-12 lg:pt-16 lg:pb-13 mt-6">
           <div class="text-black text-7xl w-full"></div> 
              <VueSlickCarousel v-bind="settings">
                 <div class="">

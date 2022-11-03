@@ -9,7 +9,7 @@
                 <button @click="scrollToService()"  class="hidden lg:block mb-4">Our Services</button>
                 <button @click="scrollToServiceMobile()"  class="block lg:hidden mb-4">Our Services</button>
                 <button @click="scrollToTour()" class="hidden lg:block mb-4">Our Tour Events</button>
-                 <button @click="scrollToTourMobile()" class="block mb-4 lg:hidden">Our Tour Events</button>
+                <button @click="scrollToTourMobile()" class="block mb-4 lg:hidden">Our Tour Events</button>
               </div>
             </div>
             <div class="w-full md:w-4/12">
