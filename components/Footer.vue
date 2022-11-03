@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-secondary-500">
+    <div class="bg-secondary-500 lg:px-2">
       <div class="py-8 px-10 lg:px-0 md:py-16 container mx-auto w-full bg-secondary-500">
          <div class="ml-0 w-full block md:flex justify-between">
             <div class="w-full md:w-4/12">

@@ -13,21 +13,24 @@
         </div>
       </BigModal>
       <div class="block w-full pb-0 py-44 bg-primary-400">
-        <div class="mx-auto container gap-6 lg:flex justify-between items-center">
+        <div class="mx-auto container gap-6 lg:flex lg:px-2 justify-between items-center">
             <div class=" max-w-md mx-auto w-full lg:mx-0 lg:w-5/12">
               <h1 class="font-semibold text-center lg:text-left mb-4 lg:mb-8 text-3xl lg:text-4xl text-white">Welcome to </h1>
               <h1 class="font-bold text-white text-center w-full lg:text-left text-4xl md:text-5xl lg:text-6xl">RENAISSANCE INSTRUCTORS</h1>
             </div> 
-            <div class="w-full lg:w-7/12 mt-10 lg:mt-0"> 
+            <div class="w-full hidden md:block lg:w-7/12 mt-10 lg:mt-0"> 
               <div class="bg-no-repeat h-screen lg:-mt-28 bg-cover w-full mx-auto md:max-w-4xl bg-center" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/callta2.JPG')+ ')' } ">
               </div>
+            </div>
+            <div class="w-full block md:hidden mt-10 lg:mt-0"> 
+              <img :src="require('@/assets/image/callta2.JPG')" class="w-full">
             </div>
         </div>
           
       </div>
 
       <div class="bg-primary-300 py-16 w-full" id="about">
-          <div class="px-4 lg:px-0 mx-auto container">
+          <div class="px-4 lg:px-2 mx-auto container">
              <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
             <div>
               <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
@@ -38,7 +41,7 @@
           </div>
       </div>
 
-      <div class=" py-10 md:py-20 px-6 md:px-0">
+      <div class=" py-10 md:py-20 px-6 md:px-2">
          <h1 class="text-secondary-500 lg:px-28 font-bold text-lg text-center mb-4 lg:mb-10 lg:text-4xl">OUR TOUR EVENTS</h1>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 container mx-auto gap-4 md:px-10 lg:px-0">
            <TourEvent @is_clicked="showEventTourDetails" v-for="item in events" :key="item.id" :tour_event="{text: item.text, picture: item.img, title:item.title, subtitle:item.subtitle}"
@@ -46,8 +49,8 @@
          </div>
       </div>
 
-      <div class="bg-no-repeat bg-cover bg-center" :style="{backgroundRepeat: 'no-repeat' + ';' , backgroundImage: 'url(' + require('@/assets/image/alma.jpg') +')'}">
-        <div class="bg-black bg-opacity-70 px-6 lg:px-0 mx-auto py-8 lg:py-28">
+      <div class="bg-secondary-500">
+        <div class="bg-black bg-opacity-30 px-6 lg:px-2 mx-auto py-28 lg:py-56">
           <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-white">OUR SERVICES</h1>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
             <OurServices v-for="item in services" :key="item.id" 
