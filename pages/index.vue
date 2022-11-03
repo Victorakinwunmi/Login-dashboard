@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <div class=" w-full py-12 lg:pt-16 lg:pb-13 mt-6">
+      <div class="w-full bg-gray-400">
           <div class="text-black text-7xl w-full"></div> 
              <VueSlickCarousel v-bind="settings">
                 <div class="">
@@ -93,13 +93,12 @@
                 </div>
               </VueSlickCarousel>
            <div>
-  </div>
+        </div>
       </div>
 
-    <Footer/>
-  </div>
-
-
+      <Footer/>
+    </div>
+    
 </template>
 
 <script>
@@ -124,7 +123,7 @@ data(){
         "slidesToScroll": 1,
         "autoplay": true,
         "speed": 10000,
-        "autoplaySpeed": 5000,
+        "autoplaySpeed": 2000,
         "cssEase": "linear",
         "responsive": [
     {
@@ -135,7 +134,7 @@ data(){
         "infinite": true,
         "autoplay": true,
         "speed": 10000,
-        "autoplaySpeed": 5000,
+        "autoplaySpeed": 2000,
         "cssEase": "linear",
         
       }
@@ -148,7 +147,7 @@ data(){
         "infinite": true,
         "autoplay": true,
         "speed": 10000,
-        "autoplaySpeed": 5000,
+        "autoplaySpeed": 2000,
         "cssEase": "linear",
       }
     },
@@ -160,7 +159,7 @@ data(){
         "infinite": true,
         "autoplay": true,
         "speed": 10000,
-        "autoplaySpeed": 5000,
+        "autoplaySpeed": 2000,
         "cssEase": "linear"
       }
     }
