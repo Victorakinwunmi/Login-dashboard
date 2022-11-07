@@ -7,8 +7,8 @@ module.exports = {
         primary: {
           '500' :'#6a7133',
           '400' : '#9FA25A',
-          '300' : '#c5cc8e'
-          
+          '300' : '#c5cc8e',
+          '200' : '#e0e7ab'          
         },
 
         secondary: {
