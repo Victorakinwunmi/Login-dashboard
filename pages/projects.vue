@@ -87,6 +87,13 @@
         </div>
       </div>
 
+      <div class="px-4 py-4 lg:px-28 lg:py-10">
+       <div class="p-4 lg:px-16 lg:py-16 bg-gradient-to-tl from-primary-200 shadow-md rounded-xl">
+         <div class="font-bold text-secondary-500 text-2xl mb-4">UPCOMING EVENTS <span>{{dot[0]}}</span> </div>
+         <div class="tetx-base lg:text-xl text-gray-600">{{programs[0]}}</div>
+       </div>
+      </div>
+
     <div class="bg-secondary-500 w-full">
          <div class="py-8 px-10 lg:px-0 md:py-16 container mx-auto w-full bg-secondary-500">
          <div class="block md:flex justify-between">
@@ -101,7 +108,7 @@
             <div class="w-full md:ml-4 lg:ml-0 md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">FOLLOW US</h1>
               <div class="text-white font-normal">
-                <a href="http://www.facebook.com/Renaissanceinstructors" class="block mb-4">Facebook</a>
+                <a href="http://www.facebook.com/Renaissanceinstructors" target="_blank" class="block mb-4">Facebook</a>
                 <a href="mailto:wahabsegunjohn@gmail.com?" target="_blank"  class="block mb-4">Email</a>
               </div>
             </div>
@@ -130,7 +137,40 @@
 
 <script>
 export default {
-
+ data() {
+    return {
+      programs: [
+         ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus aspernatur, et iure cupiditate, magnam saepe in veritatis ratione sed repellat eligendi quasi consequatur mollitia rem. Atque magnam ipsum modi deleniti.',
+         'amet consectetur adipisicing Atque magnam ipsum modi deleniti elit. Doloribus  Lorem ipsum dolor sit, aspernatur, et iure cupiditate, magnam saepe in veritatis ratione sed repellat eligendi quasi consequatur mollitia rem. ', 
+         'amet consectetur  consequatur mollitia rem adipisicing Aeleniti elit. Doloribus  Lorem ipsum dolor sit, aspernatur, et iure tque magnam ipsum modi d cupiditate, magnam saepe in veritatis ratione sed repellat eligendi quasi. ',
+        ],
+      dot: [
+        '.',
+        '..',
+        '...',
+        '....',
+        '.....',
+      ]
+    }
+  },
+  mounted(){
+    window.setInterval(()=>{
+      this.pollPerson();
+    }, 5000);
+    window.setInterval(()=>{
+      this.dotShow();
+    }, 1000);
+  },
+  methods: {
+    pollPerson(){
+      const first = this.programs.shift();
+      this.programs = this.programs.concat(first);
+    },
+    dotShow(){
+      const one = this.dot.shift();
+      this.dot = this.dot.concat(one)
+    }
+  }
 }
 </script>
 

@@ -15,7 +15,7 @@
             <div class="w-full md:w-4/12">
               <h1 class="text-white font-bold text-xl lg:text-2xl mb-6">FOLLOW US</h1>
               <div class="text-white font-normal">
-                <a href="http://www.facebook.com/Renaissanceinstructors" class="block mb-4">Facebook</a>
+                <a href="http://www.facebook.com/Renaissanceinstructors" target="_blank" class="block mb-4">Facebook</a>
                 <a href="mailto:wahabsegunjohn@gmail.com?" target="_blank"  class="block mb-4">Email</a>
               </div>
             </div>
