@@ -51,7 +51,7 @@
 
       <div class="bg-secondary-500">
         <div class="bg-black bg-opacity-30 px-6 lg:px-2 mx-auto py-28 lg:py-56">
-          <h1 class="font-bold px-8 mt-6 lg:mt-0 text-center text-lg lg:text-4xl text-white">OUR SERVICES</h1>
+          <h1 class="font-bold px-8 mb-6 lg:mt-0 text-center text-lg lg:text-4xl text-white">OUR SERVICES</h1>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto gap-2 md:gap-6 md:px-10 lg:px-0">
             <OurServices v-for="item in services" :key="item.id" 
               :icon="item.icon"
