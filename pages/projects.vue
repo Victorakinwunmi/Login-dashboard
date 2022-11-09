@@ -2,15 +2,15 @@
   <div>
      <HeaderLogoMenu/>
       <div class="group bg-no-repeat bg-cover  " :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +  require('@/assets/image/img2.jpg')+ ')' }">
-        <div class=" bg-gradient-to-br from-secondary-500 px-8 w-full bg-opacity-80 pb-16 py-56 lg:py-64">
+        <div class=" bg-gradient-to-br from-primary-400 px-8 w-full bg-opacity-80 pb-16 py-56 lg:py-64">
           <div class="max-w-2xl lg:max-w-4xl container mx-auto bg-white bg-opacity-80 lg:bg-opacity-60 rounded-xl p-10">
-            <h1 class="text-2xl lg:text-5xl text-secondary-500 font-bold">Our past campaigns have enabled us to</h1>
-            <div class="flex gap-2 items-center mt-6">
-              <img :src="require('@/assets/icon/promote.png')" class="">
+            <h1 class="text-2xl lg:text-5xl text-secondary-500 font-bold mb-8">Our past campaigns have enabled us to</h1>
+            <div class="flex gap-4 items-center">
+              <img :src="require('@/assets/icon/promote.png')" class="hidden md:block">
               <p class="text-base lg:text-xl text-secondary-500 lg:font-semibold">Promote teaching as first profession at all levels</p>
             </div>
-            <div class="flex gap-2 items-center mt-6">
-              <img :src="require('@/assets/icon/student.png')" class="">
+            <div class="flex gap-4 items-center mt-4 md:mt-6">
+              <img :src="require('@/assets/icon/student.png')" class="hidden md:block">
               <p class="text-base lg:text-xl text-secondary-500">Bring out the best in students academic performance , promote and boost their confidence level and encapsulating the I can do aura necessary for success.</p>
             </div>
           </div>
