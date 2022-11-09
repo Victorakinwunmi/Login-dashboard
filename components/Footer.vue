@@ -44,7 +44,7 @@
 export default {
 methods:{
      scrollToTour(){
-      window.scroll({top:1000 ,behavior:'smooth'})
+      window.scroll({top:1150 ,behavior:'smooth'})
     },
     scrollToService(){
       window.scroll({top:1700, behavior:'smooth'})
