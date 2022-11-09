@@ -89,8 +89,8 @@
 
       <div class="px-4 py-4 lg:px-28 lg:py-10">
        <div class="p-4 lg:px-16 lg:py-16 bg-gradient-to-tl from-primary-200 shadow-md rounded-xl">
-         <div class="font-bold text-secondary-500 text-2xl mb-4">UPCOMING EVENTS <span>{{dot[0]}}</span> </div>
-         <div class="tetx-base lg:text-xl text-gray-600">{{programs[0]}}</div>
+         <div class="font-bold text-secondary-500 text-2xl mb-4">UPCOMING EVENTS <span class="text-base text-gray-600 font-normal ">{{dot[0]}}</span> </div>
+         <div class="text-base lg:text-xl text-gray-600">{{programs[0]}}</div>
        </div>
       </div>
 
@@ -145,18 +145,23 @@ export default {
          'amet consectetur  consequatur mollitia rem adipisicing Aeleniti elit. Doloribus  Lorem ipsum dolor sit, aspernatur, et iure tque magnam ipsum modi d cupiditate, magnam saepe in veritatis ratione sed repellat eligendi quasi. ',
         ],
       dot: [
-        '.',
-        '..',
-        '...',
-        '....',
-        '.....',
+        '10s',
+        '9s',
+        '8s',
+        '7s',
+        '6s',
+        '5s',
+        '4s',
+        '3s',
+        '2s',
+        '1s',
       ]
     }
   },
   mounted(){
     window.setInterval(()=>{
       this.pollPerson();
-    }, 5000);
+    }, 10000);
     window.setInterval(()=>{
       this.dotShow();
     }, 1000);
