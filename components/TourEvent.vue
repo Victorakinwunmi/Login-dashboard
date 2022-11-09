@@ -7,8 +7,8 @@
         </div>
         <div class=" mx-auto">
             <div
-                class="rounded-2xl bg-gradient-to-b w-full from-transparent mx-auto text-white to-gray-900 px-1 py-4 bottom-0 w-full h-full duration-500 ease-in-out transform ">
-                <div class="font-medium border-l-2 border-white text-base px-2 mx-auto max-w-sm md:max-w-xs lg:w-72 truncate">{{tour_event.text}}</div>
+                class="rounded-2xl bg-gradient-to-b w-full from-transparent mx-auto text-white to-gray-900 px-1 left-0 py-4 bottom-0 w-full h-full duration-500 ease-in-out transform ">
+                <div class="font-medium border-l-2 border-white text-base px-1 md:px-2 max-w-sm md:max-w-xs lg:w-72 mx-auto  truncate">{{tour_event.text}}</div>
                 <button class="mt-2 border rounded-xl p-2 text-sm border-white hover:bg-gray-500 duration-500 ease-in-out ">Read more</button>
             </div>
         </div>

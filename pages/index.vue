@@ -33,8 +33,8 @@
           <div class="px-4 lg:px-2 mx-auto container">
              <h1 class="font-bold text-2xl lg:text-4xl mb-4 lg:mb-6 text-center lg:text-left text-secondary-500">AT A GLANCE</h1>
             <div>
-              <p class="text-secondary-500 text-lg lg:text-2xl leading">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
-              <p :class="show_info?'text-secondary-500 text-lg mt-2 lg:text-2xl leading':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
+              <p class="text-secondary-500 text-lg lg:text-2xl ">Renaissance instructors is a non governmental organization which is made up of consortium of impactful and energetic youths in Iwo land</p>
+              <p :class="show_info?'text-secondary-500 text-lg mt-2 lg:text-2xl ':'hidden'">It was inaugurated on Thursday 17th August, 2017 at the Nulge hall of Iwo local government Secretariat with about 15 people in attendance with the holy mission of encouraging disadvantaged brilliant indigent students  and appreciating our teachers (retired and active)</p>
               <button :class="show_info?'hidden':'block'" @click="showText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show more</button>
               <button  :class="show_info?'block':'hidden'"  @click="hideText" class="text-gray-500 focus:text-black text-base lg:text-xl mt-2">Show less</button>
             </div>
@@ -64,6 +64,11 @@
       <div class="w-full bg-gray-400">
           <div class="text-black text-7xl w-full"></div> 
              <VueSlickCarousel v-bind="settings">
+                <div class="">
+                    <div class="bg-no-repeat bg-cover bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/slide.jpg')+ ')' } ">
+                      <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
+                    </div>
+                </div>
                 <div class="">
                   <div class="bg-no-repeat bg-cover w-full bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/image/karimamodal.jpg')+ ')' } ">
                    <div class="bg-black bg-opacity-40 py-56 lg:py-60"></div>
