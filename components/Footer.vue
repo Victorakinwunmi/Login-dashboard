@@ -47,7 +47,7 @@ methods:{
       window.scroll({top:1150 ,behavior:'smooth'})
     },
     scrollToService(){
-      window.scroll({top:1700, behavior:'smooth'})
+      window.scroll({top:2000, behavior:'smooth'})
     },
     scrollToAbout(){
       window.scroll({top:200 ,behavior:'smooth'})
